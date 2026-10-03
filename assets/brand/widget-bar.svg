@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="160" viewBox="0 0 960 160">
+    <rect width="960" height="160" rx="32" fill="#000000"/>
+    <circle cx="48" cy="80" r="8" fill="#4CFF7E"/>
+    <text x="72" y="88" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="22" fill="#78716C">UNLOCKS TODAY</text>
+    <text x="924" y="98" text-anchor="end" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="52" fill="#F5F5F4">47</text></svg>

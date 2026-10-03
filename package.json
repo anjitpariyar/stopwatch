@@ -1,10 +1,9 @@
 {
-  "name": "stop-watch",
+  "name": "unlocked",
   "main": "index.ts",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
@@ -13,7 +12,10 @@
     "prebuild:android": "expo prebuild --platform android --clean --no-install",
     "build:apk:local": "cd android && ./gradlew assembleRelease",
     "build:apk": "eas build --profile preview --platform android",
-    "build:dev": "eas build --profile development --platform android"
+    "build:dev": "eas build --profile development --platform android",
+    "assets": "node scripts/generate-assets.js",
+    "build:store": "eas build --profile store --platform android",
+    "submit:store": "eas submit --profile production --platform android --latest"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

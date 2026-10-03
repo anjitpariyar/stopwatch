@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440">
+    <rect width="960" height="440" rx="40" fill="#000000"/>
+    <text x="40" y="150" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="18" fill="#78716C">UNLOCKS</text>
+    <text x="34" y="262" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="104" fill="#F5F5F4">47</text>
+    <text x="40" y="306" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">AVG 62/DAY</text>
+    <rect x="400" y="220" width="22" height="80" rx="6" fill="#78716C"/>
+      <text x="411" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">S</text><rect x="474" y="202" width="22" height="98" rx="6" fill="#78716C"/>
+      <text x="485" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">M</text><rect x="548" y="239" width="22" height="61" rx="6" fill="#78716C"/>
+      <text x="559" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">T</text><rect x="622" y="209" width="22" height="91" rx="6" fill="#78716C"/>
+      <text x="633" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">W</text><rect x="696" y="190" width="22" height="110" rx="6" fill="#78716C"/>
+      <text x="707" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">T</text><rect x="770" y="228" width="22" height="72" rx="6" fill="#78716C"/>
+      <text x="781" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#78716C">F</text><rect x="844" y="235" width="22" height="65" rx="6" fill="#4CFF7E"/>
+      <text x="855" y="336" text-anchor="middle" font-family="JetBrainsMono Nerd Font, JetBrains Mono, monospace" font-size="17" fill="#4CFF7E">S</text></svg>

@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "Unlocks",
+    "name": "Unlocked",
     "slug": "stop-watch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "stopwatch",
+    "scheme": "unlocked",
     "userInterfaceStyle": "dark",
     "ios": {
-      "icon": "./assets/expo.icon",
+      "icon": "./assets/images/icon.png",
       "bundleIdentifier": "com.limbo-anj.stopwatch"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#000000",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -23,7 +23,8 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Unlocked"
     },
     "plugins": [
       "expo-router",
@@ -33,35 +34,35 @@
           "widgets": [
             {
               "name": "UnlocksSmall",
-              "label": "Unlocks",
+              "label": "Unlocked",
               "minWidth": "110dp",
               "minHeight": "110dp",
               "targetCellWidth": 2,
               "targetCellHeight": 2,
               "description": "Today's unlock count",
-              "previewImage": "",
+              "previewImage": "./assets/images/widget-small-preview.png",
               "updatePeriodMillis": 1800000
             },
             {
               "name": "UnlocksMedium",
-              "label": "Unlocks (Week)",
+              "label": "Unlocked \u00b7 Week",
               "minWidth": "250dp",
               "minHeight": "110dp",
               "targetCellWidth": 4,
               "targetCellHeight": 2,
               "description": "Today's unlocks with the last 7 days",
-              "previewImage": "",
+              "previewImage": "./assets/images/widget-medium-preview.png",
               "updatePeriodMillis": 1800000
             },
             {
               "name": "UnlocksBar",
-              "label": "Unlocks (Bar)",
+              "label": "Unlocked \u00b7 Bar",
               "minWidth": "250dp",
               "minHeight": "40dp",
               "targetCellWidth": 4,
               "targetCellHeight": 1,
               "description": "Minimal unlock counter bar",
-              "previewImage": "",
+              "previewImage": "./assets/images/widget-bar-preview.png",
               "updatePeriodMillis": 1800000
             }
           ]
@@ -73,7 +74,7 @@
           "backgroundColor": "#000000",
           "android": {
             "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
+            "imageWidth": 160
           }
         }
       ],
@@ -96,6 +97,7 @@
     },
     "updates": {
       "url": "https://u.expo.dev/15bb8e13-d35c-4c56-ad66-811529c1e1a6"
-    }
+    },
+    "description": "Count how many times you unlock your phone. Home-screen widgets plus day, week, month and year history. Private, offline, no account."
   }
 }
