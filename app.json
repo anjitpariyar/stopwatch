@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "stop-watch",
+    "name": "Unlocks",
     "slug": "stop-watch",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -32,44 +32,37 @@
         {
           "widgets": [
             {
-              "name": "StopwatchLarge",
-              "label": "Stopwatch (Large)",
-              "minWidth": "250dp",
-              "minHeight": "250dp",
-              "targetCellWidth": 4,
-              "targetCellHeight": 4,
-              "description": "Full stopwatch with laps and controls",
-              "previewImage": ""
-            },
-            {
-              "name": "StopwatchMedium",
-              "label": "Stopwatch",
-              "minWidth": "250dp",
-              "minHeight": "110dp",
-              "targetCellWidth": 4,
-              "targetCellHeight": 2,
-              "description": "Compact stopwatch with controls",
-              "previewImage": ""
-            },
-            {
-              "name": "StopwatchSmall",
-              "label": "Stopwatch (2x2)",
+              "name": "UnlocksSmall",
+              "label": "Unlocks",
               "minWidth": "110dp",
               "minHeight": "110dp",
               "targetCellWidth": 2,
               "targetCellHeight": 2,
-              "description": "Square stopwatch for small spaces",
-              "previewImage": ""
+              "description": "Today's unlock count",
+              "previewImage": "",
+              "updatePeriodMillis": 1800000
             },
             {
-              "name": "StopwatchBar",
-              "label": "Stopwatch (Bar)",
+              "name": "UnlocksMedium",
+              "label": "Unlocks (Week)",
+              "minWidth": "250dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "description": "Today's unlocks with the last 7 days",
+              "previewImage": "",
+              "updatePeriodMillis": 1800000
+            },
+            {
+              "name": "UnlocksBar",
+              "label": "Unlocks (Bar)",
               "minWidth": "250dp",
               "minHeight": "40dp",
               "targetCellWidth": 4,
               "targetCellHeight": 1,
-              "description": "Minimal stopwatch bar",
-              "previewImage": ""
+              "description": "Minimal unlock counter bar",
+              "previewImage": "",
+              "updatePeriodMillis": 1800000
             }
           ]
         }
