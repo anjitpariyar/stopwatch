@@ -91,7 +91,7 @@ export function UnlockWidget({ today, average, week, hasAccess, widgetSize = 'sm
           <FlexWidget style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: ACCENT, marginRight: 6 }} />
           <TextWidget text="UNLOCKS" style={{ fontSize: 9, color: MUTED, fontFamily: 'monospace' }} />
         </FlexWidget>
-        <FlexWidget style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <FlexWidget style={{ flex: 1, width: 'match_parent', justifyContent: 'center', alignItems: 'center' }}>
           <TextWidget text={String(today)} style={{ fontSize: 44, color: TEXT, fontFamily: 'monospace' }} />
         </FlexWidget>
         <FlexWidget style={{ width: 'match_parent', alignItems: 'center' }}>

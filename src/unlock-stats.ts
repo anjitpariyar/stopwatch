@@ -101,7 +101,7 @@ export function groupHistory(days: UnlockDays, period: Period, now = new Date())
       key = dayKey(d);
       const ago = Math.round((today.getTime() - d.getTime()) / 86400000);
       label = ago === 0 ? "Today" : ago === 1 ? "Yesterday" : `${WEEKDAYS[d.getDay()]}, ${fmtShort(d)}`;
-      sublabel = ago <= 1 ? fmtShort(d) : String(d.getFullYear());
+      sublabel = ago <= 1 ? fmtShort(d) : d.getFullYear() === today.getFullYear() ? "" : String(d.getFullYear());
     } else if (period === "week") {
       const start = startOfWeek(d);
       const end = addDays(start, 6);

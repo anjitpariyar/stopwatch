@@ -150,3 +150,42 @@ render("widget-medium", widgetMedium(), path.join(IMAGES, "widget-medium-preview
 render("widget-bar", widgetBar(), path.join(IMAGES, "widget-bar-preview.png"));
 
 render("feature-graphic", featureGraphic(), path.join(STORE, "feature-graphic.png"));
+
+// ── Play Store screenshots ──────────────────────────────────────────────────
+// Raw device captures (store/screenshots/raw) are 9:20, which Play rejects
+// (long side > 2× short side), so frame them on a 1080×1920 canvas with a caption.
+const SHOTS = [
+  ["01-widget", "Your count,", "on your home screen", "EVERY UNLOCK, AT A GLANCE"],
+  ["02-app", "See the", "pattern", "DAY · WEEK · MONTH · YEAR"],
+];
+
+function screenshot(file, line1, line2, sub) {
+  const data = fs.readFileSync(path.join(STORE, "screenshots/raw", file)).toString("base64");
+  const h = 1380;
+  const w = Math.round((h * 1080) / 2400);
+  const x = (1080 - w) / 2;
+  const y = 470;
+  return svg(1080, 1920, `
+    <defs>
+      <radialGradient id="sbg" cx="50%" cy="20%" r="80%">
+        <stop offset="0" stop-color="#16130F"/><stop offset="1" stop-color="${BLACK}"/>
+      </radialGradient>
+      <clipPath id="clip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="44"/></clipPath>
+    </defs>
+    <rect width="1080" height="1920" fill="url(#sbg)"/>
+    <circle cx="540" cy="120" r="9" fill="${GREEN}"/>
+    <text x="540" y="230" text-anchor="middle" font-family="${FONT}" font-size="70" fill="${WHITE}">${line1}</text>
+    <text x="540" y="316" text-anchor="middle" font-family="${FONT}" font-size="70" fill="${WHITE}">${line2}</text>
+    <text x="540" y="390" text-anchor="middle" font-family="${FONT}" font-size="26" letter-spacing="4" fill="${MUTED}">${sub}</text>
+    <image href="data:image/jpeg;base64,${data}" x="${x}" y="${y}" width="${w}" height="${h}" clip-path="url(#clip)" preserveAspectRatio="xMidYMin slice"/>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="44" fill="none" stroke="${FAINT}" stroke-width="4"/>`);
+}
+
+fs.mkdirSync(path.join(STORE, "screenshots"), { recursive: true });
+for (const [name, l1, l2, sub] of SHOTS) {
+  const raw = fs.readdirSync(path.join(STORE, "screenshots/raw")).find((f) => f.startsWith(name));
+  if (!raw) continue;
+  render(`screenshot-${name}`, screenshot(raw, l1, l2, sub), path.join(STORE, "screenshots", `${name}.png`));
+  // The SVG embeds the whole JPEG; don't keep that copy around.
+  fs.unlinkSync(path.join(BRAND, `screenshot-${name}.svg`));
+}

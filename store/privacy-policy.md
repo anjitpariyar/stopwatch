@@ -20,4 +20,4 @@ Unlocked is not directed at children and collects no personal information from a
 If this policy changes, the updated version will be published at this address with a new date.
 
 ## Contact
-[your support email]
+anjitcoder@gmail.com

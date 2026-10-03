@@ -43,11 +43,9 @@ screen time, phone addiction, digital wellbeing, unlock counter, pickups, habit 
 ## Graphics
 - App icon 512×512: `store/icon-512.png`
 - Feature graphic 1024×500: `store/feature-graphic.png`
-- Phone screenshots (min 2, 16:9 or 9:16, 320–3840px): take on a device:
-  1. Home screen with the Week widget
-  2. App: today ring + stats
-  3. App: Week tab history
-  4. App: Year tab history
+- Phone screenshots 1080×1920: `store/screenshots/01-widget.png`, `store/screenshots/02-app.png`
+  (raw captures in `store/screenshots/raw/`; add more there, list them in `SHOTS` in
+  `scripts/generate-assets.js`, then run `npm run assets`)
 
 ## Release notes: 1.0.0
 First release. Count your phone unlocks with three home-screen widgets and day, week, month and year history.
@@ -56,7 +54,11 @@ First release. Count your phone unlocks with three home-screen widgets and day, 
 
 ## Play Console: App content answers
 
-**Privacy policy URL:** host `store/privacy-policy.md` (e.g. a GitHub Pages or Notion page) and paste the link.
+**Privacy policy URL:** https://github.com/anjitpariyar/stopwatch/blob/test/store/privacy-policy.md
+(served from the public repo; if you merge to `main`, switch `test` to `main` in this link)
+
+**Package name:** `com.limbo_anj.unlocked` (permanent once uploaded)
+**Support email:** anjitcoder@gmail.com
 
 **Data safety**
 - Does your app collect or share any of the required user data types? **No**
